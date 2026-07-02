@@ -11,5 +11,5 @@ int main (void) {
     printf("max: %d\n", max);
 
     char x = 1 == 0 ? 't' : 'f';
-        printf("%c\n", x);
+    printf("%c\n", x);
 }

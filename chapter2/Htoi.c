@@ -11,7 +11,7 @@ int main (){
     //manual way to find the length of string.
     int len, i = 0;
     while(hexa[i] != '\0'){
-       ++i;
+        ++i;
         ++len;
     }
 
