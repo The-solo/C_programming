@@ -2,8 +2,8 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
+
     const size_t N = 101;
     int numbers[N];
     size_t sum = 0;

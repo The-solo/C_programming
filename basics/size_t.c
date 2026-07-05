@@ -11,5 +11,5 @@ int main() {
   printf("size_of bytes(size_t)   = %zu\n", sizeof(size_t));
 }
 
-//size_t can store the maximum size of a theoretically possible not struct object of any type (including array).
+//size_t can store the maximum size of a theoretically possible non struct object of any type (including array).
 
