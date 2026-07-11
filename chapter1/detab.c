@@ -7,19 +7,19 @@ int detab(void);
 
 int main(){
     int c;
-  while((c = getchar())!= EOF){
-    if(c == '\t'){
-        detab();
-    }
-    else{
-        putchar(c);
-        current_col++;
-        if(c == '\n'){
-            current_col = 0;
+    while((c = getchar())!= EOF){
+        if(c == '\t'){
+            detab();
+        }
+        else{
+            putchar(c);
+            current_col++;
+            if(c == '\n'){
+                current_col = 0;
+            }
         }
     }
-  }
-  return 0;
+    return 0;
 } 
 
 int detab(void){
