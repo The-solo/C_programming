@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 
 
 // void concat_strings(char *str1, const char *str2) {
