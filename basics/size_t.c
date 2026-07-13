@@ -12,4 +12,5 @@ int main() {
 }
 
 //size_t can store the maximum size of a theoretically possible non struct object of any type (including array).
+// the size_t is an unsigned integer type. 0 to 4 billion.
 
