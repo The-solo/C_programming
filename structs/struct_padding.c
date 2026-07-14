@@ -1,5 +1,5 @@
 
-// Ordering from larger to smaller integer helps the compiler with padding.
+// Order is from larger to smaller integer helps the compiler with padding.
 typedef struct SneklangVar {
   double weight; 
   int value; 

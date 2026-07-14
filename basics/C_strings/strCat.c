@@ -36,10 +36,6 @@ void concat_strings(char *str1, const char *str2) {
     *str1 = '\0';
 }
 
-
-
-// my implementation.
-
 int main() {
 
     char name[100] = "sasuke";
