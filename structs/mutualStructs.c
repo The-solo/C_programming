@@ -6,7 +6,7 @@ typedef struct Employee employee_t;
 typedef struct Department department_t;
 
 
-
+// Here we have to use the names of struct instead of their type because of the mutual fields.
 struct Employee {
     int id; // here the size of int is known(4 bytes) so no need to use the pointer.
     char *name; // it's an array it the size is dynamic.
