@@ -18,9 +18,7 @@
 //
 
 // My implementation
-void concat_strings(char *str1, const char *str2) {
-
-    // we have no need of the starting address of the str1 here so this works fine.
+void concat_strings(char *str1, const char *str2) { // we have no need of the starting address of the str1 here so this works fine.
     while(*str1 != '\0'){
         str1++; // holds the index of '\0' aka end of str1
     }
