@@ -1,16 +1,19 @@
 #include <stdio.h>
 
+// here unions can store multiple data types but only 1 can be used at a time.
+// union reservers enough memeory to hold largest type and all fields use the same memeory.
+// To avoid undefined behavior you should only access the field you set.
 typedef enum snek_object_kind {
     INTEGER,
     STRING,
 } snek_object_kind_t;
 
 typedef union SnekObjectData { // combination of both enum & struct.
-    int v_int;
-    char *v_string;
+    int v_int; //either int 
+    char *v_string; // or string
 } snek_object_data_t;
 
-typedef struct SnekObject {
+typedef struct SnekObject { // struct stores both.
     snek_object_kind_t kind;
     snek_object_data_t data;
 } snek_object_t;
@@ -28,11 +31,10 @@ void format_object(snek_object_t obj, char *buffer) {
     }
 }
 
-
 snek_object_t new_integer(int i) {
     return (snek_object_t){
         .kind = INTEGER,
-            .data = {.v_int = i},
+            .data = {.v_int = i}, // this is how unions are used. #syntax
     };
 }
 
