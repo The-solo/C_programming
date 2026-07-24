@@ -10,7 +10,7 @@ char *get_full_greeting(char *greeting, char *name, int size) {
     // here the void pointer is converted to char instead of int because full_greeting is char array.
     // the full_greeting is just a pointer which is stored on stack and actual data on heap.
     // that's why doing char full_greeting[malloc(size * sizeof(char))] is invalid coz it is a static allocation.
-    if (full_greeting == NULL) {
+    if (full_greeting == NULL) { // checking for null pointer error.
         fprintf(stderr, "Memory allocation failed\n");
         exit(1); // Exit if allocation fails
     }
@@ -21,7 +21,7 @@ char *get_full_greeting(char *greeting, char *name, int size) {
 
 int main(){
 
-    char *msg = get_full_greeting("Hello", "sasuke", 20);
+    char *msg = get_full_greeting("Hello", "sasuke", 20); // function of type char pointer.
     printf("%s\n", msg);
     free(msg);
     return 0;
